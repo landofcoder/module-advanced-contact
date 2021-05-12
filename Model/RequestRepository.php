@@ -131,6 +131,7 @@ class RequestRepository implements \Ecomteck\AdvancedContact\Api\RequestReposito
                     $this->email->receive($requestModel, $storeId);
                     $this->messageManager->addSuccess(__('Thanks for contacting us with your comments and questions. We\'ll respond to you very soon.'));
                 }
+                return $requestModel;
             } catch (\Exception $exception) {
                 throw new CouldNotSaveException(
                     __('Could not save and sent contact: %1', $exception->getMessage()),
