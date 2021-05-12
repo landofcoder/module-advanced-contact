@@ -117,4 +117,40 @@ class Request extends AbstractModel implements RequestInterface
     {
         return $this->setData(self::UPDATED, $updated);
     }
+
+    /**
+     * Set code
+     *
+     * @param int $code
+     * @return \Ecomteck\AdvancedContact\Api\Data\RequestInterface
+     */
+    public function setCode($code){
+        return $this->setData(self::CODE, $code);
+    }
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getCode(){
+        return $this->getData(self::CODE);
+    }
+
+    /**
+     * Set message
+     *
+     * @param string $message
+     * @return \Ecomteck\AdvancedContact\Api\Data\RequestInterface
+     */
+    public function setMessage($message){
+        return $this->setData(self::MESSAGE, $message);
+    }
+    /**
+     * Get message
+     *
+     * @return string
+     */
+    public function getMessage(){
+        return $this->getData(self::MESSAGE);
+    }
 }

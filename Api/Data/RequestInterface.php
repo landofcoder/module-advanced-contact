@@ -34,6 +34,8 @@ interface RequestInterface
     const CLOSED              = 'closed';
     const CREATED             = 'created';
     const UPDATED             = 'updated';
+    const CODE                = 'code';
+    const MESSAGE             = 'message';
     /**#@-*/
 
     /**
@@ -110,4 +112,32 @@ interface RequestInterface
      * @return \Ecomteck\AdvancedContact\Api\Data\RequestInterface
      */
     public function setUpdated($updated);
+
+    /**
+     * Set code
+     *
+     * @param int $code
+     * @return \Ecomteck\AdvancedContact\Api\Data\RequestInterface
+     */
+    public function setCode($code);
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getCode();
+
+    /**
+     * Set message
+     *
+     * @param string $message
+     * @return \Ecomteck\AdvancedContact\Api\Data\RequestInterface
+     */
+    public function setMessage($message);
+    /**
+     * Get message
+     *
+     * @return string
+     */
+    public function getMessage();
 }
