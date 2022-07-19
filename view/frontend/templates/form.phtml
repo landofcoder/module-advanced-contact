@@ -33,7 +33,7 @@
 				<div class="field <?php echo $field->getData('key'); ?> <?php echo $field->getData('field_class'); ?>">
 					<label class="label" for="<?php echo $field->getData('key'); ?>"><span><?php echo $field->getData('label'); ?></span></label>
 					<div class="control">
-						<?php if(in_array($field->getData('field_type'), ['text','email'])): ?>
+						<?php if(in_array($field->getData('field_type'), ['text','email','tel'])): ?>
 							<input name="<?php echo $field->getData('key'); ?>" id="<?php echo $field->getData('key'); ?>" title="<?php echo $field->getData('label'); ?>" value="" class="<?php echo $field->getData('field_class'); ?>" type="<?php echo $field->getData('field_type'); ?>">
 						<?php elseif($field->getData('field_type') == 'textarea'): ?>
 							<textarea name="<?php echo $field->getData('key'); ?>" id="<?php echo $field->getData('key'); ?>" title="<?php echo $field->getData('label'); ?>" value="" class="<?php echo $field->getData('field_class'); ?>" style="resize:none"></textarea>
