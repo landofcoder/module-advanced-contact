@@ -20,9 +20,13 @@
  */
 namespace Ecomteck\AdvancedContact\Block\Widget;
 
-class ContactForm extends \Ecomteck\AdvancedContact\Block\ContactForm implements \Magento\Widget\Block\BlockInterface{
-
-    public function _toHtml(){
+class ContactForm extends \Ecomteck\AdvancedContact\Block\ContactForm implements \Magento\Widget\Block\BlockInterface
+{
+    /**
+     * @inheritdoc
+     */
+    public function _toHtml()
+    {
         $title = $this->getData("title");
         $this->assign("widget_heading", $title);
         if ($this->hasData("custom_template") && $this->getData("custom_template")) {
