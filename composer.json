@@ -1,5 +1,5 @@
 {
-    "name": "ecomteck/module-advanced-contact",
+    "name": "landofcoder/module-ecomteck-advanced-contact",
     "description": "Ecomteck Advanced Contact",
     "require": {
         "magento/module-contact": "*"
